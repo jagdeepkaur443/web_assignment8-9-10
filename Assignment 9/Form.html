@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel="stylesheet" href="themes/mytheme.min.css" />
+      <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      
+   </head>
+   
+   <body>
+      <div data-role = "page" id="page1">
+         <div data-role = "header">
+            <h2>Sign up form</h2>
+         </div>
+      
+         <div data-role = "main" class = "ui-content">
+            <form method = "post" action="">
+               <label for = "fname">First Name</label>
+               <input type = "text" name = "fname" id = "fname" placeholder = "First Name">
+
+               <label for = "lname">Last Name</label>
+               <input type = "text" name = "lname" id = "fname" placeholder = "Last Name">
+
+               
+               <label for = "email">Email id</label>
+               <input type = "email" name = "email" id = "fname" placeholder = "Email">
+
+               <label for="password">Password:</label>
+               <input type="password" name="password" id="password" value="" autocomplete="off">
+
+               <label for = "date">Date of Birth</label>
+               <input type = "date" name = "date" id = "date">
+
+               <a href="#page2"><button class="ui-btn ui-btn-a">Submit</button></a>
+            </form>
+            
+         <div data-role = "footer">
+            <h4>Copyright &copy; 2021</h4>
+         </div>
+         </div>
+      </div>
+
+      
+      <div data-role = "page" id = "page2">
+         <h2 class="info">Fill Your Information</h2>
+      <form>
+        <label for="text-basic">Name</label>
+        <input type="text" name="text-basic" id="text-basic" placeholder="Name">
+        <label for="text-basic">Alternate Email Id</label>
+        <input type="text" name="text-basic" id="text-basic" placeholder="Alternate Email">
+        <label for="text-basic">Contact Number</label>
+        <input type="text" name="text-basic" id="text-basic" placeholder="Contact number">
+        <label for="text-basic">Complete address</label>
+        <input type="text" name="text-basic" id="text-basic" placeholder="Address">
+        Flipswitch
+               <input type = "checkbox" data-role = "flipswitch"><br/>
+
+               Gender
+               <label for = "radio1">
+                  <input type = "radio" name = "radio-choice-0" id = "radio1">Male</input>
+               </label>
+               
+               <label for = "radio2">
+                  <input type = "radio" name = "radio-choice-0" id = "radio2">Female</input>
+               </label>
+               
+               <label for = "radio3">
+                  <input type = "radio" name = "radio-choice-0" id = "radio3">Other</input   >
+               </label>
+
+        
+         <label for="text-basic">Educational Qualification</label>
+         <fieldset data-role = "controlgroup" data-type = "horizontal">
+            <input type = "checkbox" id = "checkbox 1" />
+            <label for = "checkbox 1">Bachelor's</label>
+
+            <input type = "checkbox" id = "checkbox 2" />
+            <label for = "checkbox 2">Post Graduate</label>
+
+            <input type = "checkbox" id = "checkbox 3" />
+            <label for = "checkbox 3">Doctrate</label>
+         </fieldset>
+         <label for="text-basic">Details Description</label>
+        <input type="text" name="text-basic" id="text-basic" value="">
+
+        
+        <label for="file">Id proof:</label>
+        <input type="file" name="file" id="file" value="">
+
+        <input type = "submit" value = "Submit" name = "submit" 
+                  data-inline = "true">
+         
+         </div>
+      </form>
+    
+      </div>
+      
+   </body>
+</html>

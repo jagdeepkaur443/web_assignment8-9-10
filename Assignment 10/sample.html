@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="themes/newtheme.min.css" />
+   <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Customer Review Form</title>
+</head>
+<body>
+    
+   <div data-role = "page" id="page1">
+      <div data-role = "header">
+         <h2>Customer Review Form</h2>
+      </div>
+   
+      <div data-role = "main" class = "ui-content">
+         <form method = "post" action="">
+            <label for = "fname">Full Name</label>
+            <input type = "text" name = "fname" id = "fname" placeholder = "Full Name">
+            
+            <label for = "email">Email id</label>
+            <input type = "email" name = "email" id = "email" placeholder = "Email">
+            
+            <label for = "summary">Summary about the product you bought</label>
+            <input type = "text" name = "email" id = "summary" placeholder = "Summary">
+
+            <label for = "review">Favorite thing about the product you purchase and share your own views on that</label>
+            <input type = "email" name = "email" id = "review" placeholder = "Review">
+
+            <label for = "rating">Rating abot the product you purchase</label>
+            <fieldset data-role = "controlgroup">
+               <input type = "radio" id = "radio1" name = "radio-choice-0" checked = "checked" />
+               <label for = "radio1">3 star</label>
+   
+               <input type = "radio" id = "radio2" name = "radio-choice-0" />
+               <label for = "radio2">2 star</label>
+   
+               <input type = "radio" id = "radio3" name = "radio-choice-0" />
+               <label for = "radio3">1 star</label>
+            </fieldset>
+
+            <button class="ui-btn ui-btn-a">Submit</button>
+         </form>
+         
+      <div data-role = "footer">
+         <h4>Copyright &copy; 2021</h4>
+      </div>
+      </div>
+   </div>
+</body>
+</html>
